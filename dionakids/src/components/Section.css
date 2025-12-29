@@ -1,18 +1,23 @@
 .section {
-  min-height: 100vh;
-  background-size: cover;          /* default for all layers */
-  background-position: center;
+  width: 100vw;                  /* 40% width */
+  min-height: 100vh;            /* full viewport height */
+  margin: 0 auto;               /* center horizontally */
+  position: relative;
+  background-color: white;      /* fallback */
   background-repeat: no-repeat;
-
+  background-size: cover;       /* scale SVG to fill section */
+  background-position: center;  /* center */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .section-content {
-  color: white;
-  text-align: center;
+  position: relative;
+  z-index: 1;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
   border-radius: 8px;
+  text-align: center;
+  color: black;
 }

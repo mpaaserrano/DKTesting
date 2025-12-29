@@ -1,19 +1,14 @@
+import React from "react";
 import "./Section.css";
 
-function Section({ backgrounds, children }) {
-  // Join multiple backgrounds for CSS
-  const bgStyle = {
-    backgroundImage: backgrounds
-      ? backgrounds.map(bg => `url(${bg})`).join(", ")
-      : "none",
-  };
-
+function Section({ children, background }) {
   return (
-    <section className="section" style={bgStyle}>
-      <div className="section-content">
-        {children}
-      </div>
-    </section>
+    <div
+      className="section"
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      <div className="section-content">{children}</div>
+    </div>
   );
 }
 
