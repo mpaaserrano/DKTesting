@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" width="1440" height="64">
+	<defs>
+		<image width="1440" height="33" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIzMyIgdmlld0JveD0iMCAwIDE0NDAgMzMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMDU0LjMzIDE2LjkwNjJDOTg0LjczMiAxMy42NzQyIDkxNy4zNCA3Ljg4MDk4IDg0Ny45MzIgNC4zNjczNEM3NDkuMDY0IC0wLjY0MTAyMyA2NDYuMTA0IC0wLjk0MzU2MiA1NDcuMzkyIDQuMjUwNTJDNDUxLjQ2NCA5LjI4NTg0IDM1MS45OTYgMjEuNTY3MSAyNTcuMjA4IDI3LjgwNjZDMTczLjE0OCAzMy4zNDIyIDgxLjM3MTkgMzUuNjIxNyAwIDI4LjcwNTJWMEgxNDQwVjguMTkyNTFDMTMxNy4wNCAxOS44MzEgMTE4My42NiAyMi44NDQ1IDEwNTQuMzMgMTYuOTA2MloiIGZpbGw9IiNGRkJENTkiLz4KPC9zdmc+Cg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="orange_bottom" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
