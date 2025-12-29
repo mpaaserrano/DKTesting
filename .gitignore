@@ -1,0 +1,31 @@
+# Dependencies
+dionakids/node_modules/
+
+# Build output
+dionakids/dist/
+dionakids/build/
+
+# Environment variables
+dionakids/.env
+dionakids/.env.local
+dionakids/.env.development
+dionakids/.env.production
+dionakids/.env.test
+
+# Logs
+dionakids/npm-debug.log*
+dionakids/yarn-debug.log*
+dionakids/yarn-error.log*
+dionakids/pnpm-debug.log*
+
+# OS files
+dionakids/.DS_Store
+dionakids/Thumbs.db
+
+# Editor / IDE
+dionakids/.vscode/
+dionakids/.idea/
+
+# Cache
+dionakids/.vite/
+dionakids/.cache/
