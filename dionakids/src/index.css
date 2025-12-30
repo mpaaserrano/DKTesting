@@ -12,10 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-nunito: 'Nunito', sans-serif;
+
+  overflow-x: hidden;
 }
 
 body {
   background-color: white;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Global reset (optional but recommended) */
