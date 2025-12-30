@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
   background: transparent;
   flex-wrap: wrap;
   gap: 4rem;
@@ -68,7 +67,7 @@
   flex: 1;
   min-width: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin-top: 2rem;
 }
 

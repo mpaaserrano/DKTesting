@@ -33,7 +33,7 @@ function Section({
           className="section-bg-main"
           style={{ backgroundImage: `url(${bgMain})` }}
         >
-          <div className="section-content">{children}</div>
+          <div className="container section-content">{children}</div>
         </div>
       )}
 

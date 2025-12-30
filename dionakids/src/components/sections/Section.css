@@ -28,13 +28,12 @@
 }
 
 .section-content {
-  padding: 2rem;
   background: transparent;
   border-radius: 8px;
   text-align: center;
   z-index: 1;
   position: relative;
-  width: 80%;        /* optional: restrict content width */
+  width: 100%;        /* optional: restrict content width */
   margin: 0 auto;    /* center content horizontally */
   color: black;      /* text color changed to black */
 }
