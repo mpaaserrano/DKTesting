@@ -1,0 +1,25 @@
+# Apply automatic line endings to all text files in the project folder
+dionakids/* text=auto eol=lf
+
+# Common text/code files
+dionakids/**/*.js      text
+dionakids/**/*.jsx     text
+dionakids/**/*.ts      text
+dionakids/**/*.tsx     text
+dionakids/**/*.css     text
+dionakids/**/*.scss    text
+dionakids/**/*.html    text
+dionakids/**/*.json    text
+dionakids/**/*.md      text
+
+# Binary files (images, fonts, SVGs)
+dionakids/**/*.png     binary
+dionakids/**/*.jpg     binary
+dionakids/**/*.jpeg    binary
+dionakids/**/*.gif     binary
+dionakids/**/*.ico     binary
+dionakids/**/*.svg     binary
+dionakids/**/*.woff    binary
+dionakids/**/*.woff2   binary
+dionakids/**/*.eot     binary
+dionakids/**/*.ttf     binary
