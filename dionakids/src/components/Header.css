@@ -1,0 +1,125 @@
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; 
+    border: 2px solid #000;
+    border-radius: 12px;
+    z-index: 1000;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+}
+
+/* Logo */
+.header > div {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff7a4d;
+    cursor: pointer;
+}
+
+/* Navigation container closer to the CTA button */
+.header nav {
+    display: flex;
+    gap: 6px;      /* tight gap between nav buttons */
+    margin-left: auto; /* push nav towards CTA button */
+    flex-shrink: 0;
+}
+
+/* Nav buttons smaller */
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #462906;
+    font-size: 12px;
+    padding: 4px 6px;   /* smaller padding */
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* CTA Button */
+.schedule-button {
+    margin-left: 12px;  /* space between last nav button and CTA button */
+    padding: 8px 16px;
+    background-color: #d94b40;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Logo SVG */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 30px;   /* adjust size as needed */
+    width: auto;
+}
+
+
+/* ===== Responsive Styling ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px;
+    }
+
+    .header > div {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-left: 0;
+    }
+
+    .nav-button {
+        font-size: 11px;
+        padding: 3px 5px;
+    }
+
+    .schedule-button {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+    }
+
+    .header > div {
+        font-size: 16px;
+    }
+
+    .nav-button {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+
+    .schedule-button {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
