@@ -2,6 +2,7 @@ import React from "react";
 import "./Section.css";
 
 function Section({
+  id,
   children,
   bgTop,
   bgMain,
@@ -11,6 +12,7 @@ function Section({
 }) {
   return (
     <div
+      id = {id}
       className="section"
       style={{
         marginTop: `-${overlap}px`,

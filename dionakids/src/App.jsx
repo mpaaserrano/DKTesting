@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./components/Header";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
 
@@ -19,11 +20,25 @@ const backgroundRedBottom    = "/backgrounds/red_bottom.svg";
 const footerTop = "/footer/footer_top.svg";
 const footerMain = "/footer/footer_main.svg"
 
+
+//Section Data
+const sectionsData = [
+  { id: "hero", label: "Dionakids"},
+  { id: "cursos", label: "Cursos" },
+  { id: "diogo", label: "Quem é o Diogo"},
+  { id: "metodologia", label: "Metodologia"},
+  { id: "eventos", label: "Eventos"},
+  { id: "contactos", label: "Contacto" },
+];
+
 function App() {
   return (
     <div>
+      <Header sections={sectionsData} /> {/* Dynamic Header */}
+
       {/* Orange Section */}
       <Section
+        id="hero"
         bgMain={backgroundOrangeMain}
         bgBottom={backgroundOrangeBottom}
         overlap={0}
@@ -33,12 +48,16 @@ function App() {
       </Section>
 
       {/* White Section */}
-      <Section zIndex={1}>
+      <Section
+        id="cursos"
+        zIndex={1}
+      >
         <h1>White Section</h1>
       </Section>
 
       {/* Beige Section */}
       <Section
+        id="diogo"
         bgTop={backgroundBeigeTop}
         bgMain={backgroundBeigeMain}
         bgBottom={backgroundBeigeBottom}
@@ -50,6 +69,7 @@ function App() {
 
       {/* Blue Section */}
       <Section
+        id="metodologia"
         bgMain={backgroundBlueMain}
         bgBottom={backgroundBlueBottom}
         overlap={100}
@@ -60,6 +80,7 @@ function App() {
 
       {/* Red Section */}
       <Section
+        id="eventos"
         bgMain={backgroundRedMain}
         bgBottom={backgroundRedBottom}
         overlap={100}
@@ -68,9 +89,13 @@ function App() {
         <h1>Red Section</h1>
       </Section>
 
+      
       {/* White Section */}
-      <Section zIndex={1}>
-        <h1>White Section 2</h1>
+      <Section 
+        id="contactos"
+        zIndex={1}
+      >
+        <h1>White Section</h1>
       </Section>
 
       <Footer

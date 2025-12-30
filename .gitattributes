@@ -23,3 +23,7 @@ dionakids/**/*.woff    binary
 dionakids/**/*.woff2   binary
 dionakids/**/*.eot     binary
 dionakids/**/*.ttf     binary
+
+* text=auto
+*.jsx text eol=lf
+
