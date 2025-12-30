@@ -1,4 +1,5 @@
 import "./CourseCard.css";
+import BigButton from "../buttons/BigButton";
 
 export default function CourseCard({
   image,
@@ -8,13 +9,27 @@ export default function CourseCard({
   description,
   price,
   color,
+  borderColor,
 }) {
   return (
-    <div className="course-card" style={{ borderColor: color }}>
-      
+    <div
+      className="course-card"
+      style={{
+        borderColor: color,
+        boxShadow: `6px 6px 0 ${color}`,
+      }}
+    >
       <div className="course-image">
-        <img src={image} alt={title}  style={{ borderColor: color }} />
-        <span className="course-age" style={{ backgroundColor: color }}>
+        <img
+          src={image}
+          alt={title}
+          style={{ borderColor: color }}
+        />
+
+        <span
+          className="course-age"
+          style={{ backgroundColor: color }}
+        >
           {age}
         </span>
       </div>
@@ -32,14 +47,13 @@ export default function CourseCard({
           </strong>
         </div>
 
-        <button
-          className="course-btn"
-          style={{ backgroundColor: color }}
-        >
-          QUERO ESTE! →
-        </button>
+        <BigButton
+          text="QUERO ESTE! →"
+          url="#"
+          backgroundColor={color}
+          borderColor={borderColor}
+        />
       </div>
-
     </div>
   );
 }
