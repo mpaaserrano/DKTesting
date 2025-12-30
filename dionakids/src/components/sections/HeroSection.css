@@ -1,0 +1,94 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: transparent;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.hero-title {
+  font-family: var(--font-nunito);
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #462906; /* dark brown */
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-family: var(--font-nunito);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #462906;
+  max-width: 520px;
+  text-align: left;
+}
+
+.hero-button {
+  background-color: #f35b4f;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 12px;
+
+  border: 3px solid #7a1f17; /* dark border */
+  box-shadow: 0 6px 0 #7a1f17; /* hard shadow */
+
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Press effect */
+.hero-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #7a1f17;
+}
+
+.hero-button:hover {
+  background-color: #f35b4f;
+  border-color: #7a1f17;
+  box-shadow: 0 6px 0 #7a1f17;
+}
+
+.hero-button:focus {
+  outline: none;
+  box-shadow: 0 6px 0 #7a1f17;
+}
+
+.hero-image-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive: image goes below text on small screens */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image-container {
+    order: 1; /* Push to bottom */
+  }
+
+  .hero-content {
+    order: 0;
+  }
+}

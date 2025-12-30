@@ -34,7 +34,7 @@ const Header = ({ sections }) => {
       </nav>
 
       {/* CTA Button */}
-      <button className="schedule-button">AGENDAR AULA</button>
+      <button className="red-shadow-button">AGENDAR AULA</button>
     </header>
   );
 };

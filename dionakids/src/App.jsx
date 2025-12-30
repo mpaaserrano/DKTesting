@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "./components/Header";
-import Section from "./components/Section";
-import Footer from "./components/Footer";
+import Header from "./components/layout/Header";
+import Section from "./components/sections/Section";
+import HeroSection from "./components/sections/HeroSection";
+import Footer from "./components/layout/Footer";
 
 // Background image paths
 const backgroundOrangeMain   = "/backgrounds/orange_main.svg";
@@ -44,7 +45,7 @@ function App() {
         overlap={0}
         zIndex={1}
       >
-        <h1>Orange Section</h1>
+        <HeroSection></HeroSection>
       </Section>
 
       {/* White Section */}

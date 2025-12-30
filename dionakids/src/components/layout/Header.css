@@ -49,17 +49,42 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+
+
+
 /* CTA Button */
-.schedule-button {
+.red-shadow-button {
     margin-left: 12px;  /* space between last nav button and CTA button */
-    padding: 8px 16px;
-    background-color: #d94b40;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
+    padding: 5px 16px;
+    background-color: #f35b4f;
+    color: #ffffff;
     font-weight: bold;
+    border-radius: 12px;
+    border: 3px solid #7a1f17; /* dark border */
+    box-shadow: 0 4px 0 #7a1f17; /* hard shadow */
+
     cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+
+
 }
+
+.red-shadow-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #7a1f17;
+}
+
+.red-shadow-button:hover {
+  background-color: #f35b4f;
+  border-color: #7a1f17;
+  box-shadow: 0 4px 0 #7a1f17;
+}
+
+.red-shadow-button:focus {
+  outline: none;
+  box-shadow: 0 4px 0 #7a1f17;
+}
+
 
 /* Logo SVG */
 .logo-container {
