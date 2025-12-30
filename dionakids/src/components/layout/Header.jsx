@@ -18,7 +18,7 @@ const Header = ({ sections }) => {
 
   return (
     <header className="header">
-      <div classNmae="container">
+      <div className="container">
         {/* ===== DESKTOP NAVBAR ===== */}
         <nav className="navbar desktop">
           <div

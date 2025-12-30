@@ -8,18 +8,17 @@ function Section({
   bgMain,
   bgBottom,
   overlap = 0,
-  zIndex = 1
+  zIndex = 1,
 }) {
   return (
     <div
-      id = {id}
+      id={id}
       className="section"
       style={{
         marginTop: `-${overlap}px`,
-        zIndex: zIndex,
+        zIndex,
       }}
     >
-      {/* Top fixed background (optional) */}
       {bgTop && (
         <div
           className="section-bg-top"
@@ -27,17 +26,16 @@ function Section({
         />
       )}
 
-      {/* Stretchable main background */}
-      {bgMain && (
-        <div
-          className="section-bg-main"
-          style={{ backgroundImage: `url(${bgMain})` }}
-        >
-          <div className="container section-content">{children}</div>
+      {/* MAIN */}
+      <div
+        className="section-bg-main"
+        style={bgMain ? { backgroundImage: `url(${bgMain})` } : {}}
+      >
+        <div className="container section-content">
+          {children} {/* 🔑 AGORA SEMPRE RENDERIZA */}
         </div>
-      )}
+      </div>
 
-      {/* Bottom fixed background (optional) */}
       {bgBottom && (
         <div
           className="section-bg-bottom"
@@ -47,5 +45,6 @@ function Section({
     </div>
   );
 }
+
 
 export default Section;

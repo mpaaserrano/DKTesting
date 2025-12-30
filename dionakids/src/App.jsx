@@ -1,8 +1,17 @@
 import React from "react";
+
+//Layout
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Grid from "./components/layout/Grid";
+
+//Sections
 import Section from "./components/sections/Section";
 import HeroSection from "./components/sections/HeroSection";
-import Footer from "./components/layout/Footer";
+
+//Cards
+import CourseCard from "./components/cards/CourseCard";
+
 
 // Background image paths
 const backgroundOrangeMain   = "/backgrounds/orange_main.svg";
@@ -29,7 +38,7 @@ const sectionsData = [
   { id: "diogo", label: "Quem é o Diogo"},
   { id: "metodologia", label: "Metodologia"},
   { id: "eventos", label: "Eventos"},
-  { id: "contactos", label: "Contacto" },
+  { id: "contactos", label: "Contactos" },
 ];
 
 function App() {
@@ -53,7 +62,35 @@ function App() {
         id="cursos"
         zIndex={1}
       >
-        <h1>White Section</h1>
+        <Grid columns={3} gap={32}>
+          <CourseCard
+            image="/assets/cards/courses/DionaKidz.png"
+            age="7 A 11 ANOS"
+            title="DionaKidz"
+            subject="Minecraft & Python Introdutório"
+            description="Minecraft é o puxador emocional: o aluno sente que está “hackeando” o mundo favorito dele. Python leve nessa idade é excelente: animações e mini-jogos."
+            price="220"
+            color="#F7941D"
+          />
+          <CourseCard
+            image="/assets/cards/courses/DionaTeenz.png"
+            age="11 A 14 ANOS"
+            title="DionaTeenz"
+            subject="Roblox Studio & Desenvolvimento Web"
+            description="Roblox dá criatividade imediata e lógica de programação; Web Dev dá noção real de criação de apps e sites. Gera aquela sensação de “estou fazendo algo de verdade”."
+            price="250"
+            color="#4AA3F8"
+          />
+          <CourseCard
+            image="/assets/cards/courses/DionaBotz.png"
+            age="9 A 14 ANOS"
+            title="DionaBotz - Robótica"
+            subject="Arduino, Raspberry Pi & Linux"
+            description="Arduino é o ponto de partida para a robótica; Raspberry Pi abre portas para projetos mais complexos; Linux é quase uma iniciação mística ao mundo real da computação."
+            price="300"
+            color="#F05A4A"
+          />
+        </Grid>
       </Section>
 
       {/* Beige Section */}
