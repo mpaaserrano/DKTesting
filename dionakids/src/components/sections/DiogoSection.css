@@ -1,0 +1,21 @@
+.diogo-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.column {
+  display: flex;
+}
+
+/* Right column must be vertical */
+.column.right {
+  flex-direction: column;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .diogo-section {
+    grid-template-columns: 1fr;
+  }
+}

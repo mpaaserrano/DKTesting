@@ -1,0 +1,30 @@
+.character-column {
+  display: flex;
+}
+
+/* Desktop: allow stretching */
+.character-column .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .character-column {
+    justify-content: center;   /* horizontal centering */
+    align-items: center;       /* 🔥 THIS was missing */
+  }
+
+  .character-column .card {
+    flex: unset;
+    width: fit-content;
+    max-width: 100%;
+  }
+}
+
