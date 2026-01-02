@@ -5,6 +5,9 @@ export default function BigButton({
   url,
   backgroundColor,
   borderColor,
+  boxShadow,
+  height,
+  width,
 }) {
   return (
     <a
@@ -13,10 +16,12 @@ export default function BigButton({
       style={{
         backgroundColor,
         borderColor,
-        boxShadow: `0 6px 0 ${borderColor}`,
+        boxShadow,
+        height,
+        width,
       }}
     >
-      {text}
+      <span className="button-text">{text}</span>
     </a>
   );
 }

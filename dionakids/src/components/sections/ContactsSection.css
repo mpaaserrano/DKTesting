@@ -1,0 +1,208 @@
+.contacts-section {
+    margin-top: 7%;
+    font-weight: bold;
+}
+
+.contacts-header {
+    margin-bottom: 5%;
+}
+
+.contacts-header h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.contacts-header p {
+    text-align: center;
+}
+
+.card-content {
+    padding: 25px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.card-title {
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card-title h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1;
+
+    white-space: normal;
+    /* 🔥 permite quebra */
+    word-break: break-word;
+    /* 🔥 evita overflow */
+    overflow-wrap: break-word;
+
+    max-width: 100%;
+}
+
+.card-body {
+    text-align: left;
+}
+
+/* FORMULARIO */
+
+.newsletter-form {
+    display: flex;
+    align-items: stretch;
+    /* 🔥 chave */
+    gap: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.news-form,
+.news-description {
+    min-width: 0;
+}
+
+/* INPUT */
+.newsletter-form input {
+    height: 52px;
+    /* 🔥 base de referência */
+    padding: 0 1.2rem;
+    background-color: #fff;
+    color: #000;
+
+    border: 3px solid #000;
+    border-radius: 12px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* CARD HOLDER */
+.card-holder{
+    text-align: left;
+}
+
+.contact-card{
+    margin: 3% 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.contact-item img{
+    height: 48px;
+}
+
+.contact-text h3{
+    font-weight: 800;
+}
+
+.contact-text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #4A5565;
+}
+
+
+
+
+/* CONTACT FORM */
+.contact-form {
+    width: 100%;
+    max-width: 520px;
+    padding: 10px;
+}
+
+/* linha com 2 colunas */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* grupo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+/* label */
+.form-group label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+/* inputs e textarea */
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem 0.9rem;
+    color:#000;
+
+    border-radius: 10px;
+    border: 3px solid #e5e7eb;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    outline: none;
+    resize: none;
+    background: #fff;
+}
+
+/* textarea */
+.form-group textarea {
+    min-height: 100px;
+}
+
+/* focus */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c7d2fe;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}

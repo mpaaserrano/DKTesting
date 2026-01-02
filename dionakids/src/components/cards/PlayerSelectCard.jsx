@@ -8,9 +8,9 @@ const PlayerSelectCard = () => {
         <div className="card-wrapper">
             <Card
                 bgcolor="#f4a340"
-                bordercolor="#000"
+                bordercolor="#462906"
                 borderwidth="3px"
-                boxshadow="4px 4px 0 #000"
+                boxshadow="4px 4px 0 #462906"
             >
                 <div className="player-select">
                     <h2>Player Select:</h2>

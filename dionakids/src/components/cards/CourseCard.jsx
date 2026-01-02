@@ -53,6 +53,7 @@ export default function CourseCard({
             text="QUERO ESTE! →"
             backgroundColor={color}
             borderColor={borderColor}
+            boxShadow={`0 6px 0 ${borderColor}`}
           />
         </div>
       </div>
