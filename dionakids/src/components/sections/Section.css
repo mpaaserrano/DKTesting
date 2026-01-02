@@ -1,5 +1,5 @@
 .section {
-  width: 100vw;               /* full viewport width */
+  width: 100%;               /* full viewport width */
   min-height: 50vh;          /* default height, can grow */
   position: relative;
   display: flex;
@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 5%;
 }
 
 .section-content {
@@ -36,4 +37,10 @@
   width: 100%;        /* optional: restrict content width */
   margin: 0 auto;    /* center content horizontally */
   color: black;      /* text color changed to black */
+}
+
+@media (max-width: 1224px) {
+  .section-content{
+    padding: 0 5%;
+  }
 }

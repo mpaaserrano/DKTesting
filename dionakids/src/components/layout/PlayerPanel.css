@@ -1,0 +1,29 @@
+.player-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;             /* 🔥 MATCH LEFT COLUMN HEIGHT */
+  gap: 16px;
+  max-width: 100%;
+}
+
+/* Top content keeps natural size */
+.panel-top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Info tags row */
+.info-tags {
+  display: flex;
+  gap: 12px;
+}
+
+/* These will absorb extra height */
+.about-card,
+.quote-card {
+  flex-grow: 1;             /* 🔥 DISTRIBUTE EXTRA SPACE */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* optional but looks better */
+}

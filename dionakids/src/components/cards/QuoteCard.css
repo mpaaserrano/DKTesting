@@ -1,0 +1,64 @@
+.quote-card {
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Title */
+.quote-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 14px 0;
+}
+
+/* Subtitle */
+.quote-subtitle {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+/* List */
+.quote-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.quote-list li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* 👉 Sticker (image only) */
+.quote-flag {
+  position: absolute;
+  right: -30px;
+  bottom: 8%;
+  width: 80px;
+  height: auto;
+  transform: rotate(5deg);
+}
+
+p, li{
+  text-align: left;
+}
+
+/* medium screens */
+@media only screen and (max-width: 1224px) {
+  .quote-flag {
+    width: 80px;
+    right: 2%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .quote-title {
+    font-size: 16px;
+  }
+
+  .quote-flag {
+    width: 44px;
+    right: 2%;
+  }
+}

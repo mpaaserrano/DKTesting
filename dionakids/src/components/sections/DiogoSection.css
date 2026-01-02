@@ -1,0 +1,43 @@
+.diogo-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 100%;
+}
+
+.section-icon {
+  margin-top: -4%;
+}
+
+.section-icon img {
+  height: 80px;
+}
+
+.column {
+  display: flex;
+}
+
+/* Right column must be vertical */
+.column.right {
+  flex-direction: column;
+}
+
+.section-wrapper h2 {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #462906;
+  padding: 2%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .diogo-section {
+    grid-template-columns: 1fr;
+  }
+
+  .section-icon {
+    margin-top: -12%;
+  }
+}
