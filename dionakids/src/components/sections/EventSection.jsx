@@ -6,12 +6,19 @@ import EventCard from "../cards/EventCard"
 const MinecraftWorkshop = "/assets/events/minecraft-workshop.png"
 const Security = "/assets/events/security.png"
 const Holiday = "/assets/events/holiday.png"
+const PuraDiversao = "/assets/events/pura-diversao.png"
 
 const EventSection = () => {
     return (
         <section className="event-section">
             {/* HEADER */}
             <div className="event-header">
+                <img
+                    src={PuraDiversao}
+                    alt="Pura diversão"
+                    className="event-badge"
+                />
+
                 <h2>Eventos e Workshops</h2>
                 <p>
                     Participe das nossas atividades e aprenda se divertindo. Venha conhecer a turma!
