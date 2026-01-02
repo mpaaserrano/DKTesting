@@ -30,3 +30,18 @@
     margin-top: 2%;
     text-align: center;
 }
+
+.methodology-mascot {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    height: 600px;
+    z-index: -5;
+}
+
+@media (max-width: 768px) {
+    .methodology-mascot {
+        height: 200px;
+        top: 100%;
+    }
+}

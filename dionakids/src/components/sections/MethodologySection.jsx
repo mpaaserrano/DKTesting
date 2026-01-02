@@ -3,6 +3,7 @@ import "./MethodologySection.css";
 const Code = "/assets/methodology/code.png"
 const Puzzle = "/assets/methodology/puzzle.png"
 const Team = "/assets/methodology/team.png"
+const Dino = "/assets/methodology/dino-big.png"
 
 const MethodologySection = () => {
     return (
@@ -57,6 +58,12 @@ const MethodologySection = () => {
                 </Grid>
 
             </div>
+
+            <img
+                src={Dino}
+                alt="Dinossauro"
+                className="methodology-mascot"
+            />
         </section>
     );
 };
