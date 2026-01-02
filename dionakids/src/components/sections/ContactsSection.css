@@ -16,6 +16,13 @@
     text-align: center;
 }
 
+
+/* NEWS CARD*/
+
+.news-card{
+    margin-top: 10%;
+}
+
 .card-content {
     padding: 25px;
     max-width: 100%;
@@ -81,6 +88,50 @@
     outline: none;
     box-sizing: border-box;
 }
+
+/* CONTACT FORM CARD */
+.contact-form-card{
+    margin-top: 3%;
+}
+
+.card-left{
+    text-align: left;
+}
+
+.dashed-separator {
+  margin: 5% 0;
+  width: 100%;
+  height: 3px;
+  line-height: 1;
+
+  background-image: repeating-linear-gradient(
+    to right,
+    #000 0,
+    #000 12px,
+    transparent 12px,
+    transparent 24px
+  );
+
+  border-radius: 30px;
+
+  /* 🔥 isto é o que faz os cantos ficarem arredondados */
+  -webkit-mask-image: repeating-linear-gradient(
+    to right,
+    #000 0,
+    #000 12px,
+    transparent 12px,
+    transparent 24px
+  );
+  mask-image: repeating-linear-gradient(
+    to right,
+    #000 0,
+    #000 12px,
+    transparent 12px,
+    transparent 24px
+  );
+}
+
+
 
 /* CARD HOLDER */
 .card-holder{
@@ -155,7 +206,7 @@
     border-radius: 10px;
     border: 3px solid #e5e7eb;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
 
     outline: none;
