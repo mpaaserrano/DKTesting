@@ -35,7 +35,7 @@ export default function EventCard({
             text={buttonText}
             backgroundColor={color}
             borderColor={buttonBorderColor}
-            boxShadowColor={color}
+            boxShadow={"0 6px 0 #000"}
           />
         </div>
       </div>
