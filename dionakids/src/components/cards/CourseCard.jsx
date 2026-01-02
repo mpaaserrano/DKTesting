@@ -23,7 +23,7 @@ export default function CourseCard({
         <img
           src={image}
           alt={title}
-          style={{ borderColor: color }}
+          style={{ borderBottomColor: color }}
         />
 
         <span
@@ -40,19 +40,21 @@ export default function CourseCard({
 
         <p>{description}</p>
 
-        <div className="course-price">
-          <span>INVESTIMENTO</span>
-          <strong style={{ color }}>
-            R$ {price} <small>/mês</small>
-          </strong>
-        </div>
+        {/* Footer fixo no fundo */}
+        <div className="course-footer">
+          <div className="course-price">
+            <span>INVESTIMENTO</span>
+            <strong style={{ color }}>
+              R$ {price} <small>/mês</small>
+            </strong>
+          </div>
 
-        <BigButton
-          text="QUERO ESTE! →"
-          url="#"
-          backgroundColor={color}
-          borderColor={borderColor}
-        />
+          <BigButton
+            text="QUERO ESTE! →"
+            backgroundColor={color}
+            borderColor={borderColor}
+          />
+        </div>
       </div>
     </div>
   );
