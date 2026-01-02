@@ -27,7 +27,7 @@ const EventSection = () => {
                         description="Todos os meses, temos o nosso workshop público! Esse mês é Minecraft, venha aprender como podemos criar regras no mundo aberto!"
                         buttonText="INSCREVA-SE"
                         color="#000"
-                        borderColor="#000"
+                        buttonBorderColor="#3C3C3C"
                     />
 
                     <EventCard
@@ -36,7 +36,7 @@ const EventSection = () => {
                         description="Como fazer seu filho/a ter conhecimento do que é seguro e do que não é seguro?"
                         buttonText="QUERO ASSISTIR!"
                         color="#000"
-                        borderColor="#000"
+                        buttonBorderColor="#3C3C3C"
                     />
 
                     <EventCard
@@ -45,7 +45,7 @@ const EventSection = () => {
                         description="Aproveite próxima época para dar uma nova skill pra seu filho/a"
                         buttonText="SAIBA MAIS"
                         color="#000"
-                        borderColor="#000"
+                        buttonBorderColor="#3C3C3C"
                     />
 
 
