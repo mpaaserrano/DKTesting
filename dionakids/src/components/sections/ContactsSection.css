@@ -1,0 +1,17 @@
+.contacts-section {
+    margin-top: 7%;
+    font-weight: bold;
+}
+
+.contacts-header {
+    margin-bottom: 5%;
+}
+
+.contacts-header h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.contacts-header p {
+    text-align: center;
+}
