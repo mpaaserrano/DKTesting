@@ -15,6 +15,7 @@ import DiogoSection from "../components/sections/DiogoSection";
 import CourseCard from "../components/cards/CourseCard";
 import CharacterCard from "../components/cards/CharacterCard";
 import CourseSection from "../components/sections/CourseSection";
+import MethodologySection from "../components/sections/MethodologySection";
 
 // Background image paths
 const backgroundOrangeMain = "/backgrounds/orange_main.svg";
@@ -86,7 +87,7 @@ export default function Home() {
         overlap={100}
         zIndex={2}
       >
-        <h1>Blue Section</h1>
+        <MethodologySection />
       </Section>
 
       {/* EVENTS */}
