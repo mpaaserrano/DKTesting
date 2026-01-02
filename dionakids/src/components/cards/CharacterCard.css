@@ -1,0 +1,65 @@
+.character-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Wrapper do badge */
+.image-wrapper {
+  position: absolute;
+  top: 120px;
+  left: -16px;
+  z-index: 5;
+}
+
+/* Imagem do badge */
+.image-wrapper img {
+  height: 76px;
+  display: block;
+}
+
+/* Card principal */
+.character-card {
+  position: relative;
+  /* 🔥 Âncora do badge */
+}
+
+/* Wrapper da imagem do personagem */
+.character-wrapper {
+  width: 100%;
+}
+
+.character-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 1224px) {
+  .image-wrapper {
+    left: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .character-column {
+    justify-content: center;
+    /* horizontal centering */
+    align-items: center;
+    /* 🔥 THIS was missing */
+    margin: 0 auto;
+  }
+
+  .character-column .card {
+    flex: unset;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .image-wrapper {
+    top: 140px;
+  }
+  
+}
+
