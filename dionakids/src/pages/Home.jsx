@@ -9,14 +9,15 @@ import PlayerPanel from "../components/layout/PlayerPanel";
 // Sections
 import Section from "../components/sections/Section";
 import HeroSection from "../components/sections/HeroSection";
+import CourseSection from "../components/sections/CourseSection";
 import DiogoSection from "../components/sections/DiogoSection";
 import MethodologySection from "../components/sections/MethodologySection";
 import EventSection from "../components/sections/EventSection";
+import ContactsSection from "../components/sections/ContactsSection";
 
 
 // Cards
 import CharacterCard from "../components/cards/CharacterCard";
-import CourseSection from "../components/sections/CourseSection";
 
 // Background image paths
 const backgroundOrangeMain = "/backgrounds/orange_main.svg";
@@ -104,7 +105,7 @@ export default function Home() {
 
       {/* CONTACT */}
       <Section id="contactos" zIndex={1}>
-        <h1>White Section</h1>
+        <ContactsSection />
       </Section>
 
       <Footer bgTop={footerTop} bgMain={footerMain} zIndex={1}>
