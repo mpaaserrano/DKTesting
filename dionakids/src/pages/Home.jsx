@@ -14,6 +14,7 @@ import DiogoSection from "../components/sections/DiogoSection";
 // Cards
 import CourseCard from "../components/cards/CourseCard";
 import CharacterCard from "../components/cards/CharacterCard";
+import CourseSection from "../components/sections/CourseSection";
 
 // Background image paths
 const backgroundOrangeMain = "/backgrounds/orange_main.svg";
@@ -60,40 +61,7 @@ export default function Home() {
 
       {/* COURSES */}
       <Section id="cursos" zIndex={1}>
-        <Grid columns={3} gap={32}>
-          <CourseCard
-            image="/assets/cards/courses/DionaKidz.png"
-            age="7 A 11 ANOS"
-            title="DionaKidz"
-            subject="Minecraft & Python Introdutório"
-            description="Minecraft é o puxador emocional: o aluno sente que está hackeando o mundo favorito dele. Python leve nessa idade é excelente."
-            price="220"
-            color="#F7941D"
-            borderColor="#C26A10"
-          />
-
-          <CourseCard
-            image="/assets/cards/courses/DionaTeenz.png"
-            age="11 A 14 ANOS"
-            title="DionaTeenz"
-            subject="Roblox Studio & Desenvolvimento Web"
-            description="Roblox dá criatividade imediata e lógica de programação; Web Dev dá noção real de criação."
-            price="250"
-            color="#4AA3F8"
-            borderColor="#1E2939"
-          />
-
-          <CourseCard
-            image="/assets/cards/courses/DionaBotz.png"
-            age="9 A 14 ANOS"
-            title="DionaBotz - Robótica"
-            subject="Arduino, Raspberry Pi & Linux"
-            description="Arduino é o ponto de partida para a robótica; Raspberry Pi abre portas para projetos mais complexos."
-            price="300"
-            color="#F05A4A"
-            borderColor="#A02619"
-          />
-        </Grid>
+        <CourseSection />
       </Section>
 
       {/* ABOUT */}
