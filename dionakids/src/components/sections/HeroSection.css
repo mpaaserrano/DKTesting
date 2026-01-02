@@ -37,6 +37,7 @@
   font-weight: 800;
   font-size: 1rem;
   border-radius: 12px;
+  margin-top: 5%;
 
   border: 3px solid #7a1f17; /* dark border */
   box-shadow: 0 6px 0 #7a1f17; /* hard shadow */
@@ -88,5 +89,11 @@
 
   .hero-content {
     order: 0;
+  }
+
+  .hero-button{
+    margin: 0 auto;
+    margin-top: 5%;
+    display: block;
   }
 }
