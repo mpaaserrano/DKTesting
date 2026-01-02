@@ -60,12 +60,13 @@
 .course-content h4 {
   font-size: 1rem;
   font-weight: 700;
+  color: #1E2939;
 }
 
 .course-content p {
   font-size: 0.95rem;
   line-height: 1.4;
-  color: #444;
+  color: #4A5565;
 }
 
 /* ---------- FOOTER (COLADO AO FUNDO) ---------- */
@@ -88,7 +89,7 @@
   display: block;
   font-size: 0.7rem;
   letter-spacing: 1px;
-  color: #999;
+  color: #99A1AF;
 }
 
 .course-price strong {
@@ -97,5 +98,5 @@
 
 .course-price small {
   font-size: 0.9rem;
-  color: #999;
+  color: #6A7282;
 }
