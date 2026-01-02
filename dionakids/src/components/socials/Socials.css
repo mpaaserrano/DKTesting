@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  gap: 32px;
+  margin: 16px 0;
+}
+
+/* link */
+.socials a {
+  display: inline-flex;
+}
+
+/* icon */
+.socials img {
+  width: 44px;
+  height: 44px;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+/* hover */
+.socials img:hover {
+  transform: translate(-2px, -2px);
+}
+
+/* active */
+.socials img:active {
+  transform: translate(0, 0);
+}
