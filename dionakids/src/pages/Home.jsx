@@ -104,8 +104,6 @@ export default function Home() {
         bgBottom={backgroundBeigeBottom}
         zIndex={3}
       >
-        <h2>O seu Guia nessa aventura!</h2>
-
         <DiogoSection
           left={<CharacterCard />}
           right={<PlayerPanel />}
