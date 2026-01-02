@@ -10,18 +10,24 @@
   font-weight: 800;
   line-height: 1.3;
   margin: 0 0 14px 0;
+  text-align: left;
+  color: #462906;
 }
 
 /* Subtitle */
 .quote-subtitle {
   font-weight: 700;
   margin: 0 0 10px 0;
+  text-align: left;
+  color: #462906;
 }
 
 /* List */
 .quote-list {
   margin: 0;
   padding-left: 20px;
+  text-align: left;
+  color: #462906;
 }
 
 .quote-list li {
@@ -37,11 +43,6 @@
   width: 80px;
   height: auto;
   transform: rotate(5deg);
-}
-
-p, li{
-  text-align: left;
-  color: #462906;
 }
 
 /* medium screens */
