@@ -15,3 +15,61 @@
 .contacts-header p {
     text-align: center;
 }
+
+.card-content {
+    padding: 25px;
+}
+
+.card-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card-title h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.card-body {
+    text-align: left;
+}
+
+/* FORMULARIO */
+
+.newsletter-form {
+    display: flex;
+    align-items: stretch; /* 🔥 chave */
+    gap: 1rem;
+}
+
+
+/* INPUT */
+.newsletter-form input {
+    height: 52px; /* 🔥 base de referência */
+    padding: 0 1.2rem;
+    background-color: #fff;
+    color: #000;
+
+    border: 3px solid #000;
+    border-radius: 12px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .newsletter-form {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
