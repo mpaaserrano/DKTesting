@@ -1,5 +1,11 @@
 import Grid from "../layout/Grid";
 import "./EventSection.css";
+import EventCard from "../cards/EventCard"
+
+//Image imports
+const MinecraftWorkshop = "/assets/events/minecraft-workshop.png"
+const Security = "/assets/events/security.png"
+const Holiday = "/assets/events/holiday.png"
 
 const EventSection = () => {
     return (
@@ -15,8 +21,34 @@ const EventSection = () => {
             {/* CONTENT */}
             <div className="event-content">
                 <Grid gap={32}>
+                    <EventCard
+                        image={MinecraftWorkshop}
+                        title="Workshop de Minecraft"
+                        description="Todos os meses, temos o nosso workshop público! Esse mês é Minecraft, venha aprender como podemos criar regras no mundo aberto!"
+                        buttonText="INSCREVA-SE"
+                        color="#000"
+                        borderColor="#000"
+                    />
 
-                    
+                    <EventCard
+                        image={Security}
+                        title="LIVE: Segurança online"
+                        description="Como fazer seu filho/a ter conhecimento do que é seguro e do que não é seguro?"
+                        buttonText="QUERO ASSISTIR!"
+                        color="#000"
+                        borderColor="#000"
+                    />
+
+                    <EventCard
+                        image={Holiday}
+                        title="Colônia de Férias"
+                        description="Aproveite próxima época para dar uma nova skill pra seu filho/a"
+                        buttonText="SAIBA MAIS"
+                        color="#000"
+                        borderColor="#000"
+                    />
+
+
 
                 </Grid>
 
