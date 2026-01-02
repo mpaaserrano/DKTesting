@@ -7,7 +7,7 @@ import "./CourseSection.css";
 
 const CourseSection = () => {
   return (
-    <div className="section-wrapper">
+    <div className="course-section-wrapper">
       {/* HEADER */}
       <div className="top">
       
