@@ -1,0 +1,32 @@
+.methodology-section {
+    margin-top: 7%;
+    color: #1E2939;
+    font-weight: bold;
+}
+
+.methodology-header {
+    margin-bottom: 5%;
+}
+
+.methodology-header h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.methodology-header p {
+    text-align: center;
+}
+
+.item-img img {
+    height: 80px;
+}
+
+.item-body h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.item-body p {
+    margin-top: 2%;
+    text-align: center;
+}
