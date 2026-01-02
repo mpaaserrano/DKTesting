@@ -3,6 +3,8 @@
   flex-direction: column;
   height: 100%;             /* 🔥 MATCH LEFT COLUMN HEIGHT */
   gap: 16px;
+  max-width: 100%;
+  display: block;
 }
 
 /* Top content keeps natural size */

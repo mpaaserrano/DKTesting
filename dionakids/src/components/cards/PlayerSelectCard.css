@@ -35,8 +35,22 @@
 .player-row span {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
-  font-size: 44px;        /* 🔥 VERY BIG */
+  font-size: 44px;
+  /* 🔥 VERY BIG */
   color: #ffffff;
   line-height: 1;
   white-space: nowrap;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .player-row span {
+    font-size: 32px;
+    /* 🔥 VERY BIG */
+  }
+
+  .player-row img {
+    width: 24px;
+    height: auto;
+  }
 }
